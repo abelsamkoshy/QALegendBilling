@@ -12,8 +12,8 @@ public class UserManagementPage extends TestHelperUtility {
     private final String _userManagementMenu="//span[text()='User Management']";
     @FindBy(xpath = _userManagementMenu )public WebElement userManagementMenu;
 
-    private final String _usersMenu="//li[@class='active active-sub']//span[@class='title']";
-    @FindBy(xpath = _usersMenu )public WebElement usersMenu;
+    private final String _usersMenu="body > div.wrapper > aside > section > ul > li.treeview.active.active-sub > ul > li.active.active-sub > a > span";
+    @FindBy(css = _usersMenu )public WebElement usersMenu;
 
     private final String _rolesMenu="//i[@class='fa fa-briefcase']//following-sibling::span";
     @FindBy(xpath = _rolesMenu )public WebElement rolesMenu;

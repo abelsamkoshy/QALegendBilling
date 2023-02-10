@@ -5,40 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="264e6513-5ebd-4ec2-b4f3-e24e465902c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/constants/ErrorMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/constants/ExcelSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/constants/ExtentLogMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/extentmanager/ExtentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/pages/ResetPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/pages/UserManagementPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/pages/UserPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/utilities/ExcelUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/utilities/PageUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/utilities/RandomDataUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/utilities/RobotUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/utilities/TableUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/utilities/TestHelperUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/utilities/WaitUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalegend/automationcore/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalegend/automationcore/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalegend/automationcore/TableUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalegend/dataprovider/DataProviders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalegend/listeners/TestListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalegend/testscript/HomeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalegend/testscript/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalegend/testscript/ResetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalegend/testscript/UserManagementTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalegend/testscript/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkins_testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/TC002_verifyValidLogin.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/TC002_verifyValidLogin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/TC_010_verifyUsersPageTitle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/TC_010_verifyUsersPageTitle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qalegend/pages/UserManagementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qalegend/pages/UserManagementPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,19 +68,11 @@
       <recent name="com.qalegend.constants" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.UserManagementTest.TC_010_verifyUsersPageTitle">
-    <configuration name="HomeTest.TC001_verifyHomePageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/abels/IdeaProjects/QALegendBilling/jenkins_testng.xml">
+    <configuration name="C:/Users/abels/IdeaProjects/QALegendBilling/jenkins_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QALegendBilling" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qalegend.testscript.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qalegend.testscript" />
-      <option name="MAIN_CLASS_NAME" value="com.qalegend.testscript.HomeTest" />
-      <option name="METHOD_NAME" value="TC001_verifyHomePageTitle" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/jenkins_testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -188,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/abels/IdeaProjects/QALegendBilling/jenkins_testng.xml" />
         <item itemvalue="TestNG.UserManagementTest.TC_010_verifyUsersPageTitle" />
         <item itemvalue="TestNG.UserManagementTest.TC_009_verifyUsermangementSubTabs" />
         <item itemvalue="TestNG.HomeTest.TC_008_verifyclickingOnsignOutToLoginPage" />
         <item itemvalue="TestNG.HomeTest.TC_007_verifyDateDisplayed" />
-        <item itemvalue="TestNG.HomeTest.TC001_verifyHomePageTitle" />
       </list>
     </recent_temporary>
   </component>
