@@ -15,7 +15,7 @@ import java.util.List;
 public class ResetTest extends Base {
     LoginPage login;
     ResetPage reset;
-    @Test
+    @Test(priority = 1,description = "TTC_003_verifyErrorMessageForInvalidLogin",groups = {"Regression"})
     public void TC_005_VerifyErrorMessageOnForgetPasswordWithInvalidEmail(){
         List<ArrayList<String>> data = ExcelUtility.excelDataReader("ResetPage");
         String expValMsg= data.get(0).get(1);

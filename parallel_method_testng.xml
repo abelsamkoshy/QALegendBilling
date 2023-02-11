@@ -4,11 +4,12 @@
     <listeners>
         <listener class-name="com.qalegend.listeners.TestListener"/>
     </listeners>
-    <test name="chrome test">
+    <test name="Parallel testing - Method">
         <classes>
             <class name="com.qalegend.testscript.HomeTest"/>
-
-<!--            <class name="com.qalegend.testscript.LoginTest"/>-->
+            <class name="com.qalegend.testscript.LoginTest"/>
+            <class name="com.qalegend.testscript.ResetTest"/>
+            <class name="com.qalegend.testscript.UserManagementTest"/>
         </classes>
     </test>
 </suite>

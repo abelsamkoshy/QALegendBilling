@@ -16,7 +16,7 @@ public class HomeTest extends Base {
     HomePage home;
     LoginPage login;
 
-    @Test
+    @Test(priority = 1,description = "TC001_verify Home page title",groups = {"Smoke"})
     public void TC006_verifyHomePageTitle() throws IOException {
         //extentTest.get().assignCategory("Smoke");
         List<ArrayList<String>> data = ExcelUtility.excelDataReader("LoginPage");
@@ -35,7 +35,7 @@ public class HomeTest extends Base {
         Assert.assertEquals(actHomePageTitle, expHomePageTitle, ErrorMessages.TITLE_FAILURE_MESSAGE);
         //extentTest.get().log(Status.PASS,"Expected homepage title match with actual homepage title");
     }
-    @Test
+    @Test(priority = 1,description = "TC_007_verifyDateDisplayed",groups = {"Regression"})
     public void TC_007_verifyDateDisplayed(){
         List<ArrayList<String>> data = ExcelUtility.excelDataReader("LoginPage");
         String userName=data.get(1).get(1);
@@ -48,7 +48,7 @@ public class HomeTest extends Base {
         login.endTour();
         home.checkDate();
     }
-    @Test
+    @Test(priority = 1,description = "TC_008_verifyclickingOnsignOutToLoginPage",groups = {"Sanity"})
     public void TC_008_verifyclickingOnsignOutToLoginPage(){
         List<ArrayList<String>> data = ExcelUtility.excelDataReader("LoginPage");
         String userName=data.get(1).get(1);

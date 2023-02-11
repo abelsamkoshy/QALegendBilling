@@ -31,7 +31,7 @@ public class LoginTest extends Base {
         Assert.assertEquals(actLogingPageTitle,expLoginPageTitle, ErrorMessages.TITLE_FAILURE_MESSAGE);
         //extentTest.get().log(Status.PASS,"Expected homepage title match with actual homepage title");
     }
-    @Test
+    @Test(priority = 1,description = "TC002_verifyValidLogin",groups = {"Sanity"})
     public void TC002_verifyValidLogin(){
         List<ArrayList<String>> data = ExcelUtility.excelDataReader("LoginPage");
         String userName=data.get(1).get(1);
@@ -45,7 +45,7 @@ public class LoginTest extends Base {
         String actUserName=home.getUserName();
         Assert.assertEquals(actUserName,expUserName,ErrorMessages.INVALID_LOGIN_MESSAGE);
     }
-    @Test
+    @Test(priority = 1,description = "TTC_003_verifyErrorMessageForInvalidLogin",groups = {"Regression"})
     public void TC_003_verifyErrorMessageForInvalidLogin(){
         List<ArrayList<String>> data = ExcelUtility.excelDataReader("LoginPage");
         String expValMsg=data.get(4).get(1);
@@ -58,7 +58,7 @@ public class LoginTest extends Base {
         String actValMsg=login.getValidationMsg();
         Assert.assertEquals(actValMsg,expValMsg,ErrorMessages.INVALID_LOGIN_MESSAGE);
     }
-    @Test
+    @Test(priority = 1,description = "TTC_004_VerifyUserClickRememberMeCheckbox",groups = {"Smoke"})
     public void TC_004_VerifyUserClickRememberMeCheckbox(){
         login=new LoginPage(driver);
         login.clickRememberMeCheckBox();

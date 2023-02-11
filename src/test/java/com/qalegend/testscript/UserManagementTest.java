@@ -20,7 +20,7 @@ public class UserManagementTest extends Base {
     LoginPage login;
     HomePage home;
     WaitUtility wait;
-    @Test
+    @Test(priority = 1,description = "TC_009_verifyUsermangementSubTabs",groups = {"Regression"})
     public void TC_009_verifyUsermangementSubTabs() throws InterruptedException {
         List<ArrayList<String>> data = ExcelUtility.excelDataReader("LoginPage");
         String userName=data.get(1).get(1);
@@ -41,7 +41,7 @@ public class UserManagementTest extends Base {
         String actUserPageTitle=user.getUserPageTitle();
         Assert.assertEquals(actUserPageTitle,expUserPageTitle, ErrorMessages.TITLE_FAILURE_MESSAGE);
     }
-    @Test
+    @Test(priority = 1,description = "TC_010_verifyUsersPageTitle",groups = {"Sanity"})
     public void TC_010_verifyUsersPageTitle() throws InterruptedException {
         List<ArrayList<String>> data = ExcelUtility.excelDataReader("LoginPage");
         String userName=data.get(1).get(1);

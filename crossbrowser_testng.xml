@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross browser testing suite">
+    <listeners>
+        <listener class-name="com.qalegend.listeners.TestListener"/>
+    </listeners>
+    <test name="chrome test">
+        <classes>
+            <class name="com.qalegend.testscript.HomeTest">
+                <methods>
+                    <include name="TC006_verifyHomePageTitle"/>
+                    <include name="TC_007_verifyDateDisplayed"/>
+                    <include name="TC_008_verifyclickingOnsignOutToLoginPage"/>
+                </methods>
+            </class>
+            <class name="com.qalegend.testscript.LoginTest">
+                <methods>
+                    <include name="TC002_verifyValidLogin"/>
+                    <include name="TC_003_verifyErrorMessageForInvalidLogin"/>
+                    <include name="TC_004_VerifyUserClickRememberMeCheckbox"/>
+                </methods>
+            </class>
+            <class name="com.qalegend.testscript.ResetTest">
+                <methods>
+                    <include name="TC_005_VerifyErrorMessageOnForgetPasswordWithInvalidEmail"/>
+                </methods>
+            </class>
+            <class name="com.qalegend.testscript.UserManagementTest">
+                <methods>
+                    <include name="TC_009_verifyUsermangementSubTabs"/>
+                    <include name="TC_010_verifyUsersPageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="edge test">
+        <classes>
+            <class name="com.qalegend.testscript.HomeTest">
+                <methods>
+                    <include name="TC006_verifyHomePageTitle"/>
+                    <include name="TC_007_verifyDateDisplayed"/>
+                    <include name="TC_008_verifyclickingOnsignOutToLoginPage"/>
+                </methods>
+            </class>
+            <class name="com.qalegend.testscript.LoginTest">
+                <methods>
+                    <include name="TC002_verifyValidLogin"/>
+                    <include name="TC_003_verifyErrorMessageForInvalidLogin"/>
+                    <include name="TC_004_VerifyUserClickRememberMeCheckbox"/>
+                </methods>
+            </class>
+            <class name="com.qalegend.testscript.ResetTest">
+                <methods>
+                    <include name="TC_005_VerifyErrorMessageOnForgetPasswordWithInvalidEmail"/>
+                </methods>
+            </class>
+            <class name="com.qalegend.testscript.UserManagementTest">
+                <methods>
+                    <include name="TC_009_verifyUsermangementSubTabs"/>
+                    <include name="TC_010_verifyUsersPageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
