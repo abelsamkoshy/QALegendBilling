@@ -1,7 +1,10 @@
 package com.qalegend.testscript;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.qalegend.automationcore.Base;
 import com.qalegend.constants.ErrorMessages;
+import com.qalegend.listeners.TestListener;
 import com.qalegend.pages.HomePage;
 import com.qalegend.pages.LoginPage;
 import com.qalegend.utilities.ExcelUtility;
@@ -15,10 +18,11 @@ import java.util.List;
 public class HomeTest extends Base {
     HomePage home;
     LoginPage login;
+    ThreadLocal<ExtentTest> extentTest = TestListener.getTestInstance();
 
     @Test(priority = 1,description = "TC001_verify Home page title",groups = {"Smoke"})
     public void TC006_verifyHomePageTitle() throws IOException {
-        //extentTest.get().assignCategory("Smoke");
+        extentTest.get().assignCategory("Smoke");
         List<ArrayList<String>> data = ExcelUtility.excelDataReader("LoginPage");
         String userName=data.get(1).get(1);
         String password=data.get(2).get(1);
@@ -33,7 +37,7 @@ public class HomeTest extends Base {
         home = new HomePage(driver);
         String actHomePageTitle = home.getHomePageTitle();
         Assert.assertEquals(actHomePageTitle, expHomePageTitle, ErrorMessages.TITLE_FAILURE_MESSAGE);
-        //extentTest.get().log(Status.PASS,"Expected homepage title match with actual homepage title");
+        extentTest.get().log(Status.PASS,"Expected homepage title match with actual homepage title");
     }
     @Test(priority = 1,description = "TC_007_verifyDateDisplayed",groups = {"Regression"})
     public void TC_007_verifyDateDisplayed(){
